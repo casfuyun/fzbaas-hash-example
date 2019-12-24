@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    implementation platform(project(':platform'))
+    implementation project(':core')
+    implementation 'org.hyperledger.fabric-sdk-java:fabric-sdk-java'
+    testImplementation 'org.codehaus.groovy:groovy-all'
+    testImplementation 'org.spockframework:spock-core'
+}
+
+task listrepos {
+    doLast {
+        println "Repositories:"
+        project.repositories.each { println "Name: " + it.name + "; url: " + it.url }
+    }
+}

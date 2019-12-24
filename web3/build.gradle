@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+    id 'groovy'
+}
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    implementation platform(project(':platform'))
+    implementation project(':core')
+    implementation 'org.web3j:core'
+    testImplementation 'org.codehaus.groovy:groovy-all'
+    testImplementation 'org.spockframework:spock-core'
+}

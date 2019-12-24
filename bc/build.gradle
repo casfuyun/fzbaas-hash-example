@@ -1,0 +1,17 @@
+plugins {
+    id 'java-library'
+    id 'groovy'
+}
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    implementation platform(project(':platform'))
+    implementation project(':core')
+    implementation 'org.bouncycastle:bcprov-jdk15on'
+    testImplementation 'org.codehaus.groovy:groovy-all'
+    testImplementation 'org.spockframework:spock-core'
+}

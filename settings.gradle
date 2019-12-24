@@ -1,0 +1,3 @@
+rootProject.name = 'fzbaas-hash-example'
+
+include 'platform', 'core', 'jca', 'bc', 'web3', 'fabric', 'check'
