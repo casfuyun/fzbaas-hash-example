@@ -1,0 +1,8 @@
+*.jar
+!gradle-wrapper.jar
+.gradle
+build
+.idea
+out
+.DS_Store
+Thumbs.db
